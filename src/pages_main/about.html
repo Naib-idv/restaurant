@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà hàng</title>
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="preload" as="image" href="../assets/images/hero-slider-1.jpg">
+    <link rel="preload" as="image" href="../assets/images/hero-slider-2.jpg">
+    <link rel="preload" as="image" href="../assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body>
+
+    <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Hi</p>
+    </div>
+
+<!-- header section start -->
+
+<header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+    <div class="lo">
+        <img src="../assets/images/logo.jpg">
+    </div>
+    <a href="../pages_main/home.html" class="logo">Techbep<span>Collection</span></a>
+
+    <nav class="navbar">
+        <a href="../pages_main/home.html">Home</a>
+        <a href="../pages_main/menu.html">Menu</a>  
+        <a href="../pages_main/table.html">Booking</a>
+        <a href="../pages_main/about.html">About</a>
+        <a href="../pages_main/review.html">Contact</a>
+    </nav>
+
+    <div class="icons">
+        <input type="text" placeholder="Tìm kiếm"> <i class="fas fa-search"></i>
+        <a href="../pages_main/cart.html" class="fas fa-shopping-cart"></a>
+        <a href="../pages_main/user.html" class="fas fa-user"></a>
+
+</header>
+
+<!-- header section ends -->
+
+<!--about section starts  -->
+<section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="../assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Cho tình yêu tuyệt đối <br>
+              với đồ ăn ngon!
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Hãy đến với chúng tôi và cảm nhận sự khác biệt trong từng món ăn
+            </p>
+
+            <a href="../pages_main/menu.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+            </a>
+
+            </li>
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="../pages_main/table.html" class="hero-btn has-after">
+          <img src="../assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book</span>
+        </a>
+ 
+</section>
+<!-- about section ends -->
+<!-- event section starts  -->
+
+      <section class="section event bg-black-10" aria-label="event">
+        <div class="container">
+
+          <h2 class="section-title headline-1 text-center">Upcoming Event</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="../assets/images/event-1.jpg" width="350" height="450" loading="lazy"
+                    alt="Flavour" class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2025-09-15">15/09/2025</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Food, Flavour</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Hãy cảm nhận món ăn bằng tất cả các giác quan của bạn
+                  </h3>
+                </div>
+
+              </div>
+              <a href="./menu.html" class="btn btn-primary">
+            <span class="text text-1">Xem món ăn</span>
+          </a>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="../assets/images/event-2.jpg" width="350" height="450" loading="lazy"
+                    alt="Flavour" class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2025-06-07">07/06/2025</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Healthy Food</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Bữa ăn lành mạnh cho sức khỏe của bạn
+                  </h3>
+                </div>
+
+              </div>
+              <a href="./menu.html" class="btn btn-primary">
+            <span class="text text-1">Xem món ăn</span>
+          </a>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="../assets/images/event-3.jpg" width="350" height="450" loading="lazy"
+                    alt="Flavour" class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2025-07-15">15/07/2025</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Recipie</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Trải nghiệm món ăn mới lạ
+                  </h3>
+                </div>
+
+              </div>
+              <a href="./menu.html" class="btn btn-primary">
+            <span class="text text-1">Xem món ăn</span>
+          </a>
+            </li>
+
+          </ul>
+
+
+        </div>
+      </section>
+
+ <footer>
+    <div class="end">
+        <p>📍 Địa chỉ: 123 Đường ABC, Quận XYZ, Hà Nội, Việt Nam</p>
+        <p>📞 Số điện thoại: 0123 456 789</p>
+        <p>📧 Email: contact@cuahang.com</p>
+        <p>🕒 Giờ mở cửa: 8:00 AM - 10:00 PM</p>
+    </div>
+</footer>
+
+</body>
+</html>

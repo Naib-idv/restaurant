@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Bàn</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+
+    
+<!-- header section start -->
+
+<header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+    <div class="lo">
+        <img src="../assets/images/logo.jpg">
+    </div>
+    <a href="#" class="logo">Techbep<span>Collection</span></a>
+
+    <nav class="navbar">
+        <a href="../pages_main/home.html">Home</a>
+        <a href="../pages_main/menu.html">Menu</a>  
+        <a href="../pages_main/table.html">Booking</a>
+        <a href="../pages_main/about.html">About</a>
+        <a href="../pages_main/review.html">Contact</a>
+    </nav>
+
+    <div class="icons">
+        <input type="text" placeholder="Tìm kiếm"> <i class="fas fa-search"></i>
+        <a href="../pages_main/cart.html" class="fas fa-shopping-cart"></a>
+        <a href="../pages_main/user.html" class="fas fa-user"></a>
+
+</header>
+
+<!-- header section ends -->
+<body>
+<section class="booking-page" >
+<div class="background"></div>
+
+        <div class="booking-form">
+        
+            <h2>Table Booking Form</h2>
+            <form>
+
+                <label for="name">Họ và Tên:</label>
+                <input type="text" id="name" name="name" placeholder="Nguyen Van A" required>
+            
+
+          
+                <label for="phone">Số Điện Thoại:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+
+       
+                <label for="address">Địa chỉ:</label>
+                <input type="text" id="address" name="address" placeholder="Stress A, City B" required>
+
+
+                <label for="date">Ngày Đặt:</label>
+                <input type="date" id="date" name="date" required>
+            
+
+         
+                <label for="start-time">Giờ Đặt:</label>
+                <input type="time" id="start-time" name="start-time" required>
+         
+
+      
+                <label for="end-time">Giờ Kết Thúc:</label>
+                <input type="time" id="end-time" name="end-time" required>
+        
+
+         
+                <label for="selectedTable">Bàn đã chọn:</label>
+                <input type="text" id="selectedTable" name="table" readonly>
+       
+            
+            <button type="submit" class="booking-button">Xác Nhận Đặt Bàn</button>
+            
+            </form>
+        </div>
+
+</section>
+<script>
+document.addEventListener("input", function() {
+    let name = document.getElementById("name").value;
+    let date = document.getElementById("date").value;
+    let start_time = document.getElementById("start-time").value;
+    let phone = document.getElementById("phone").value;
+    let address = document.getElementById("address").value;
+    let end_time = document.getElementById("end-time").value;
+
+
+    document.querySelector(".booking-button").disabled = !(name && date && start_time && phone && address && end_time);
+
+    document.querySelector(".booking-button").addEventListener("click", function(event) {
+    event.preventDefault(); // Ngăn form tải lại trang ngay lập tức
+    window.location.href = "done.html";
+    });
+    const closeButton = document.querySelector(".form-cancel");
+    closeButton.addEventListener("click", function() {
+       window.location.href = 'table.html'; // Ẩn form đặt bàn
+    });
+});
+    
+
+
+</script>
+ <footer>
+    <div class="end">
+        <p>📍 Địa chỉ: 123 Đường ABC, Quận XYZ, Hà Nội, Việt Nam</p>
+        <p>📞 Số điện thoại: 0123 456 789</p>
+        <p>📧 Email: contact@cuahang.com</p>
+        <p>🕒 Giờ mở cửa: 8:00 AM - 10:00 PM</p>
+    </div>
+</footer>
+</body>
+</html>
